@@ -42,7 +42,7 @@ public class CreateUserTest extends BaseTest{
 	@DataProvider
 	public Object[][] getUserData() {
 		return new Object[] [] {
-			{"Priyanka", "female", "active"},
+			{"Priyanka", "Female", "active"},
 			{"Revathi","Female","inactive"},
 			{"Ranjit","male","active"}
 		};
@@ -57,7 +57,7 @@ public class CreateUserTest extends BaseTest{
 	@Owner("NAL")
 	@Severity(SeverityLevel.CRITICAL)
 	@Test(dataProvider = "getUserData")
-	public void createAUserTestUSingDataProvider(String name, String gender, String status) {
+	public void createAUserTestUsingDataProvider(String name, String gender, String status) {
 		User user = new User(null, name, StringUtils.getRandomEmailId(), gender, status);
 		
 		Response response = restClient.post(BASE_URL_GOREST, GOREST_USERS_ENDPOINT, user, null, null, AuthType.BEARER_TOKEN, ContentType.JSON);
