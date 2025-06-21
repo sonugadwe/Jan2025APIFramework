@@ -4,9 +4,9 @@
 <suite name="API Regression Test Suite" verbose="4">
 
 
-	<!--<listeners>
+	<listeners>
 		 <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener" /> 
-	</listeners>-->
+	</listeners>
 
 
 	<test name="Go Rest API Test - Get User">
