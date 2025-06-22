@@ -51,5 +51,11 @@
 			<class name="com.qa.api.schema.tests.GoRestUserAPISchemaTest" />
 		</classes>
 	</test>
+	
+	<test name="RESRSP Test">
+		<classes>
+			<class name="com.qa.api.reqres.tests.ReqResTest" />
+		</classes>
+	</test>
 
 </suite>	
